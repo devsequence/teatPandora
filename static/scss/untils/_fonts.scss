@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Pan Display';
+  src: url('../fonts/PanDisplayBold/Pan Display Regular.eot');
+  src: url('../fonts/PanDisplayBold/Pan Display Regular.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/PanDisplayBold/Pan Display Regular.woff') format('woff'),
+          url('../fonts/PanDisplayBold/Pan Display Regular.woff2') format('woff2'),
+          url('../fonts/PanDisplayBold/Pan Display Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gill Sans Nova';
+  src: url('../fonts/GillSansNova/Gill Sans Nova Medium.eot');
+  src: url('../fonts/GillSansNova/Gill Sans Nova Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GillSansNova/Gill Sans Nova Medium.woff') format('woff'),
+  url('../fonts/GillSansNova/Gill Sans Nova Medium.woff2') format('woff2'),
+  url('../fonts/GillSansNova/Gill Sans Nova Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pan Display';
+  src: url('../fonts/PanDisplayBold/Pan Display Bold.eot');
+  src: url('../fonts/PanDisplayBold/Pan Display Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PanDisplayBold/Pan Display Bold.woff') format('woff'),
+  url('../fonts/PanDisplayBold/Pan Display Bold.woff2') format('woff2'),
+  url('../fonts/PanDisplayBold/Pan Display Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+$PanDisplay : 'Pan Display';
+$GillSansNova : 'Gill Sans Nova';

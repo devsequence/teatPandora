@@ -1,0 +1,161 @@
+.product{
+  padding: 20px 0;
+  &-slider{
+    &__inner{
+      position: relative;
+      margin-bottom: 20px;
+    }
+    &__nav{
+      position: absolute;
+      display: flex;
+      top: 50%;
+      margin-top: -10px;
+      width: 100%;
+      .icon{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        fill: none;
+        stroke: rgba($default, 1);
+      }
+      .slick-disabled{
+        .icon{
+          stroke: rgba($default, .3);
+        }
+      }
+    }
+    &__prev{
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+    &__next{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .slide{
+      img{
+        width: 100%;
+      }
+    }
+    .slick-dots{
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      bottom: 12px;
+      display: flex;
+      justify-content: center;
+      li{
+        width: 6px;
+        height: 6px;
+        margin: 0 3px;
+        border-radius: 50%;
+        background: $light;
+        &.slick-active{
+          background: $primary-100;
+        }
+      }
+      button{
+        display: none;
+      }
+    }
+  }
+  &-info{
+    &__info{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.145em;
+      color: $gray;
+      margin-bottom: 18px;
+    }
+    &__title{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.017em;
+      color: $default;
+      margin-bottom: 6px;
+    }
+    &__price{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      &-old, &-new{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.003em;
+        margin: 0 5px;
+      }
+      &-old{
+        text-decoration-line: line-through;
+        color: $default;
+      }
+      &-new{
+        color: $red;
+      }
+    }
+    &__text{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.017em;
+      color: $default;
+      margin-bottom: 30px;
+    }
+    &__quiz{
+      &-title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 130%;
+        color: $default;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+.quiz{
+  &-inner{
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    &:after{
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: $light-100;
+    }
+  }
+  &-item{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #27251F;
+    position: absolute;
+    transition: all ease 300ms;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    &.active{
+      opacity: 1;
+      visibility: visible;
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &-btn{
+    .btn-primary{
+      margin-bottom: 5px;
+    }
+  }
+}

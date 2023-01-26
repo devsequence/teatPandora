@@ -1,0 +1,268 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Pan Display', Arial, serif;
+  color: $default;
+  background-color: $white;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: $PanDisplay;
+}
+h1 {
+  font-size: 42px;
+  line-height: 42px;
+  color: $default;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 42px;
+  color: $default;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 26px;
+  color: $default;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 28px;
+  color: $default;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 26px;
+  color: $default;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 21px;
+  color: $default;
+}
+
+p {
+  font-size: 14px;
+  line-height: 23px;
+}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+@media (min-width:992px){.container{max-width:1350px}}
+img {
+  display: block;
+  //width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+section {
+  position: relative;
+  padding: 40px 0;
+  z-index: 1;
+}
+
+.section {
+  position: relative;
+  padding: 100px 0;
+}
+
+.row.min {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.row.min > div[class^="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.overflow {
+  overflow: hidden !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+span,
+.icon {
+  transition: all 150ms ease;
+}
+button{
+  cursor: pointer;
+}
+.wysiwyg{
+  font-size: 16px;
+  line-height: 24px;
+  color: $default;
+  p{
+    font-size: 16px;
+    line-height: 24px;
+    color: $default;
+    margin-bottom: 16px;
+  }
+}
+
+
+input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type=search] {
+  -webkit-appearance: none;
+}
+.input, .input-search{
+  font-family: $GillSansNova;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 136%;
+  letter-spacing: 0.155em;
+  text-transform: uppercase;
+  color: #B4B4B4;
+  outline: none;
+  border: 1px solid #F5F5F5;
+  background-color: $white;
+  border-radius: 0;
+  text-overflow: ellipsis;
+  &::-webkit-input-placeholder {
+    color: #B4B4B4;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color: #B4B4B4;
+    opacity: 1;
+  }
+  &:-moz-placeholder {
+    color: #B4B4B4;
+    opacity: 1;
+  }
+  &::-ms-input-placeholder {
+    color: #B4B4B4;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: #B4B4B4;
+    opacity: 1;
+  }
+  &:focus,
+  &:active {
+    border-color: $default;
+  }
+  // invalid
+  &:invalid {
+    box-shadow: none;
+  }
+  &:-moz-submit-invalid {
+    box-shadow: none;
+  }
+  &:-moz-ui-invalid {
+    box-shadow: none;
+  }
+}
+.btn-secondary,
+.btn-primary{
+  font-family: $PanDisplay;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.145em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 15px;
+  width: 100%;
+  transition: all ease 300ms;
+}
+.btn-primary{
+  background: $default;
+  color: $white;
+  &:hover{
+    color: $default;
+    background: $primary;
+  }
+}
+.btn-secondary{
+  background: $default;
+  border-color: $default;
+}
+.btn-line{
+  font-family: $PanDisplay;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.155em;
+  text-transform: uppercase;
+  background: $white;
+  color: $default;
+  border-radius: 3px;
+  border: 1px solid $gray-100;
+  padding: 9px 22px 11px;
+  &:hover{
+    color: $default;
+    background: $primary;
+    border-color: $primary;
+  }
+}
+.slide{
+  outline: none !important;
+  border: 0 !important;
+  &:hover, &:active{
+    outline: none !important;
+    border: 0 !important;
+  }
+}
+//.tab-item{
+//  visibility: hidden;
+//  position: absolute;
+//  left: -9999px;
+//  top: -9999px;
+//  margin-top: 50px;
+//  opacity: 0;
+//  transition: margin-top 0.7s ease, opacity 0.4s ease;
+//  &.active{
+//    visibility: visible;
+//    position: relative;
+//    left: 0;
+//    top: 0;
+//    margin-top: 0;
+//    opacity: 1;
+//  }
+//}

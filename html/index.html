@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+
+</head>
+<body class="home">
+<!--page-wrapper-->
+<div class="page-wrapper">
+	@@include('./includes/_header.html')
+	<!--page-content-->
+    <div class="page-content">
+        <section class="product">
+            <div class="container">
+                <div class="product-slider__inner">
+                    <div class="product-slider">
+                        <div class="slide">
+                            <img src="../static/images/general/gal-1.png" alt="product">
+                        </div>
+                        <div class="slide">
+                            <img src="../static/images/general/gal-2.png" alt="product">
+                        </div>
+                        <div class="slide">
+                            <img src="../static/images/general/gal-3.png" alt="product">
+                        </div>
+                        <div class="slide">
+                            <img src="../static/images/general/gal-4.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="product-slider__nav">
+                        <div class="product-slider__prev">
+                            <svg class="icon">
+                                <use xlink:href="#ic-arrow-left"></use>
+                            </svg>
+                        </div>
+                        <div class="product-slider__next">
+                            <svg class="icon">
+                                <use xlink:href="#ic-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-info__info">
+                        NOVITÀ | RISPARMIA 57€
+                    </div>
+                    <div class="product-info__title">
+                        Set Bracciale Sogna in Grande
+                    </div>
+                    <div class="product-info__price">
+                        <div class="product-info__price-old">€ 236,00</div>
+                        <div class="product-info__price-new">€ 179,00</div>
+                    </div>
+                    <div class="product-info__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer malesuada nunc vel risus commodo viverra. Leo in vitae turpis massa sed elementum tempus egestas. Augue neque gravida in fermentum et sollicitudin ac. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Massa massa ultricies mi quis hendrerit dolor magna eget est. Urna et pharetra pharetra massa massa ultricies mi.
+                    </div>
+                    <div class="product-info__quiz quiz">
+                        <div class="product-info__quiz-title">
+                            Domanda <span class="current">1</span>/<span class="count">3</span>:
+                        </div>
+                        <div class="quiz-inner">
+                            <div class="quiz-item active" data-quiz="question-1">
+                                Avete mai usato un Set Bracciale Sogna in Grande?
+                            </div>
+                            <div class="quiz-item" data-quiz="question-2">
+                                Avete mai usato un Set Bracciale Sogna in Grande?
+                            </div>
+                            <div class="quiz-item" data-quiz="question-3">
+                                Avete mai usato un Set Bracciale Sogna in Grande?
+                            </div>
+                        </div>
+                        <div class="quiz-btn">
+                            <button type="button" class="btn-primary">Sì</button>
+                            <button type="button" class="btn-primary">No</button>
+                            <div class="quiz-link hidden">http://vnm45rtghost.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+	<!--page-content-->
+	@@include('./includes/_footer.html')
+
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+@@include('./includes/_scripts.html')
+</body>
+</html>
