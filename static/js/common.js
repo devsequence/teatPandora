@@ -31,7 +31,7 @@ if($('.quiz-item').length > 0){
 $('.quiz-btn .btn-primary').on('click', function (e) {
     if($('.quiz-item:last-child').hasClass('active')){
         var link =  $('.quiz-link').text();
-         window.location.replace(link);
+         window.location.href = link;
     }else{
         $('.quiz-item.active').removeClass('active').next().addClass('active');
         var selectedPosition = $('.quiz-item.active').index() + 1;
